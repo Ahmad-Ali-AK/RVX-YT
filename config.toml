@@ -6,11 +6,6 @@ parallel-jobs = 1
 
 # you can use rvmm-config-gen to generate a config
 
-[Music]
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
-arch = "arm64-v8a"
-build-mode = "both"
-
 [Reddit]
 apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
 arch = "arm64-v8a"
@@ -20,14 +15,18 @@ apkmirror-dlurl = "https://apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-mu
 arch = "arm64-v8a"
 included-patches = "'SIM spoof'"
 
+[Twitch]
+apkmirror-dlurl = "https://apkmirror.com/apk/twitch-interactive-inc/twitch/"
+arch = "arm64-v8a"
+
+[Twitter]
+apkmirror-dlurl = "https://apkmirror.com/apk/twitter-inc/twitter/"
+arch = "arm64-v8a"
+included-patches = "'Hide view count' 'Open links with app chooser'"
+
 [YouTube]
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 arch = "arm64-v8a"
 build-mode = "module"
-excluded-patches = "'GmsCore support'"
-
-[com.facebook.katana]
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/facebook/facebook-492-0-0-127-80-release/"
-arch = "arm64-v8a"
-
+included-patches = "'Custom branding' 'Change header'"
 
